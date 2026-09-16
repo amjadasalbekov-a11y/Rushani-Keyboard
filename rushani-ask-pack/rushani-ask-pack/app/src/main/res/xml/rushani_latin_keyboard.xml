@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Rushani Latin Keyboard Layout for AnySoftKeyboard
+    Based on the Latin Rushani orthography (Karamshoyev system)
+
+    Special characters used in Rushani:
+    Vowels with macron: Ā ā, Ī ī, Ō ō, Ū ū
+    Vowels with other marks: Ê ê, Ů ů
+    Greek letters: Δ δ (delta), Θ θ (theta)
+    Modified Latin: Š š, Ž ž, Č č, Ɣ ɣ, Ɣ̌ ɣ̌, X̌ x̌, Ǯ ǰ, Ʒ ʒ
+-->
+<Keyboard
+    android:keyWidth="10%p"
+    android:keyHeight="@dimen/key_height"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ROW 1: q w e r t y u i o p + specials -->
+    <Row>
+        <!-- q -->
+        <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"
+             android:popupCharacters="Q" />
+        <!-- w -->
+        <Key android:codes="119" android:keyLabel="w"
+             android:popupCharacters="W" />
+        <!-- e → long-press: ê -->
+        <Key android:codes="101" android:keyLabel="e"
+             android:popupCharacters="êEÊ" />
+        <!-- r -->
+        <Key android:codes="114" android:keyLabel="r"
+             android:popupCharacters="R" />
+        <!-- t → long-press: θ -->
+        <Key android:codes="116" android:keyLabel="t"
+             android:popupCharacters="θTΘ" />
+        <!-- y -->
+        <Key android:codes="121" android:keyLabel="y"
+             android:popupCharacters="Y" />
+        <!-- u → long-press: ū ů -->
+        <Key android:codes="117" android:keyLabel="u"
+             android:popupCharacters="ūůUŪŮ" />
+        <!-- i → long-press: ī -->
+        <Key android:codes="105" android:keyLabel="i"
+             android:popupCharacters="īIĪ" />
+        <!-- o → long-press: ō -->
+        <Key android:codes="111" android:keyLabel="o"
+             android:popupCharacters="ōOŌ" />
+        <!-- p → long-press: ö (as shown on layout image) -->
+        <Key android:codes="112" android:keyLabel="p"
+             android:popupCharacters="PÖö" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- ROW 2: a s d f g h ʒ j k l -->
+    <Row>
+        <!-- a → long-press: ā -->
+        <Key android:codes="97" android:keyLabel="a" android:keyEdgeFlags="left"
+             android:popupCharacters="āAĀ" />
+        <!-- s → long-press: š -->
+        <Key android:codes="115" android:keyLabel="s"
+             android:popupCharacters="šSŠ" />
+        <!-- d → long-press: δ -->
+        <Key android:codes="100" android:keyLabel="d"
+             android:popupCharacters="δDΔ" />
+        <!-- f -->
+        <Key android:codes="102" android:keyLabel="f"
+             android:popupCharacters="F" />
+        <!-- g → long-press: ɣ̌ -->
+        <Key android:codes="103" android:keyLabel="g"
+             android:popupCharacters="ɣ̌Gɣ̌" />
+        <!-- h -->
+        <Key android:codes="104" android:keyLabel="h"
+             android:popupCharacters="H" />
+        <!-- ʒ (Ʒ) — mapped to the ʒ/ӡ key -->
+        <Key android:codes="658" android:keyLabel="ʒ"
+             android:popupCharacters="Ʒ" />
+        <!-- ǰ (j with caron) -->
+        <Key android:codes="496" android:keyLabel="ǰ"
+             android:popupCharacters="J̌ǰ" />
+        <!-- k -->
+        <Key android:codes="107" android:keyLabel="k"
+             android:popupCharacters="K" />
+        <!-- l -->
+        <Key android:codes="108" android:keyLabel="l"
+             android:popupCharacters="L" android:keyEdgeFlags="right" />
+    </Row>
+
+    <!-- ROW 3: z x c v b n m + shift/delete -->
+    <Row>
+        <Key android:codes="KEYCODE_SHIFT" android:keyLabel="⇧"
+             android:keyEdgeFlags="left"
+             android:keyWidth="15%p" />
+        <!-- z → long-press: ž -->
+        <Key android:codes="122" android:keyLabel="z"
+             android:popupCharacters="žZŽ" />
+        <!-- x → long-press: x̌ ɣ -->
+        <Key android:codes="120" android:keyLabel="x"
+             android:popupCharacters="x̌Xx̌Ɣɣ" />
+        <!-- c → long-press: č -->
+        <Key android:codes="99" android:keyLabel="c"
+             android:popupCharacters="čCČ" />
+        <!-- v -->
+        <Key android:codes="118" android:keyLabel="v"
+             android:popupCharacters="V" />
+        <!-- b -->
+        <Key android:codes="98" android:keyLabel="b"
+             android:popupCharacters="B" />
+        <!-- n -->
+        <Key android:codes="110" android:keyLabel="n"
+             android:popupCharacters="N" />
+        <!-- m -->
+        <Key android:codes="109" android:keyLabel="m"
+             android:popupCharacters="M" />
+        <Key android:codes="KEYCODE_DELETE" android:keyLabel="⌫"
+             android:keyEdgeFlags="right"
+             android:keyWidth="15%p" />
+    </Row>
+
+    <!-- ROW 4: symbols / space / enter -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="KEYCODE_MODE_CHANGE" android:keyLabel="?123"
+             android:keyEdgeFlags="left"
+             android:keyWidth="15%p" />
+        <Key android:codes="44" android:keyLabel=","
+             android:keyWidth="10%p" />
+        <Key android:codes="32" android:keyLabel=" "
+             android:isRepeatable="false"
+             android:keyWidth="40%p" />
+        <Key android:codes="46" android:keyLabel="."
+             android:keyWidth="10%p" />
+        <Key android:codes="KEYCODE_DONE" android:keyLabel="↵"
+             android:keyEdgeFlags="right"
+             android:keyWidth="25%p" />
+    </Row>
+
+</Keyboard>

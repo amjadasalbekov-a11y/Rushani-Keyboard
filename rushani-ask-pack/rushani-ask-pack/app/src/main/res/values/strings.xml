@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rushani Latin Keyboard</string>
+    <string name="keyboard_name_rushani_latin">Rushani (Latin)</string>
+    <string name="keyboard_description_rushani_latin">Rushani Latin keyboard using the Karamshoyev orthography. Supports all Rushani special characters including δ, θ, x̌, ɣ̌, ǰ, ʒ, and macron vowels.</string>
+</resources>

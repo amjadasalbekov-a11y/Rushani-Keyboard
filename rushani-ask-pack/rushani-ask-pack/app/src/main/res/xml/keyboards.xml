@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Keyboards registration file for AnySoftKeyboard
+    This file tells ASK which keyboard layouts this pack provides.
+-->
+<Keyboards>
+
+    <Keyboard
+        android:id="@id/rushani_latin_keyboard"
+        android:keyboardLayout="@xml/rushani_latin_keyboard"
+        android:keyboardLocale="tg"
+        android:name="Rushani (Latin)"
+        android:description="Rushani Latin keyboard — Karamshoyev orthography"
+        android:defaultDictionaryLocale="tg"
+        android:iconResId="@drawable/ic_keyboard_rushani" />
+
+</Keyboards>
